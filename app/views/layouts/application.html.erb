@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<title>Cms</title>
+	<%= stylesheet_link_tag "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+	<body style="background-color:#cccccc;">
+<div id="newa">
+<div id="header">
+			<%= @page_title || "Content Managment System" %>
+		 
+			 
+			</div>
+			
+			
+			<div id="header">
+			<%= image_tag("ruby1.jpg") %>
+			</div>
+		
+		
+			<div id="side" >
+			
+				<div id="comment">
+					<% if @comment %>
+					
+					<%= render @comment%>
+					<% end %>
+				</div>
+		
+		
+			<ul>
+<li><a href="http://localhost:3000">Home</a></li>
+<li><a href="http://localhost:3000/sites/new">New</a></li>
+<li><a href="http://localhost:3000/sites/">pagesinfo</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+		</div></div>	<div id="main" >
+				<%= yield %>
+			</div>
+		
+		
+			<tr>
+			
+				<td id = "footer" colspan="10" > <div  id = "footer">  Designed By Fatema & Haida</div> </td>
+
+			</tr>
+ 
+	</body>
+</html>
+

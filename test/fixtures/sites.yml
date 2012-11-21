@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+one:
+  title: MyString
+  permalink: MyString
+  body: xyz here
+  created_at: 2012-04-23 13:04:50
+  updated_at: 2012-04-23 13:04:50
+
+two:
+  title: MyString
+  permalink: MyString
+  body: xyz here
+  created_at: 2012-04-23 13:04:50
+  updated_at: 2012-04-23 13:04:50 
+  
+ruby:
+  title: Project Management
+  permalink: Projects must operate in a broad organizational environment Project managers need to use systems thinking Taking a holistic view of carrying out projects within the context of the organization Senior managers must make sure projectscontinue to support current business needs
+  body: some text here..
+  created_at: 2012-04-22
+  updated_at: 2012-03-23

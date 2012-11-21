@@ -1,0 +1,32 @@
+<p id="notice">
+	<%= notice %>
+</p>
+<p>
+	<b>Title:</b>
+	<%= @site.title %>
+</p>
+<p>
+	<b>Permalink:</b>
+	<%= @site.permalink %>
+</p>
+<p>
+	<b>Body:</b>
+	<%= @site.body %>
+</p>
+<p>
+	<b>Created at:</b>
+	<%= @site.created_at %>
+</p>
+<p>
+	<b>Updated at:</b>
+	<%= @site.updated_at %>
+</p>
+<h2>Comments</h2>
+<div id="page_comments">
+	<%= render @site.comments %>
+</div>
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+<br />
+<%= link_to 'Edit', edit_site_path(@site) %> 
+<%= link_to 'Back', sites_path %>

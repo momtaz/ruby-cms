@@ -1,0 +1,5 @@
+if ($('#comment tr').length == 1) { $('#comment').show('blind',
+1000); }
+$('#comment').html("<%=j render @comment %>");
+$('#current_item').css({'background-color':'#red'}).
+animate({'background-color':'#red'}, 1000);

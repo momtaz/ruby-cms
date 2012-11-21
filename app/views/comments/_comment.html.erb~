@@ -1,0 +1,25 @@
+<div class="comment_title">
+	Your Comment
+</div>
+<p>
+	<b>Commenter:</b>
+	<%= comment.commenter %>
+</p>
+<p>
+	<b>Email:</b>
+	<%= comment.email %>
+</p>
+<p>
+	<b>Comment:</b>
+	<%= comment.body %>
+</p>
+<p<hr>
+	<tr>
+		
+	<td><%= comment.commenter%></td>
+		<td><%= comment.body%></td>
+	</tr>
+	<%= link_to 'Destroy Comment', [comment.site, comment],
+	:confirm => 'Are you sure?',
+	:method => :delete %>
+</p>

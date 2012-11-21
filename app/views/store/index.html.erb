@@ -1,0 +1,18 @@
+<h1>Listing Page</h1>
+<body>
+	<% if notice %>
+	<p id="notice">
+		<%= notic %>
+	</p>
+	<% end %>
+	<% @sites.each do |site| %>
+	<div class="entry">
+		<h3><%= site.title %></h3>
+		<%= sanitize(site.permalink) %>
+	</div>
+	<!--<%= button_to "Add comment", store_path(:site_id => site),
+	:remote => true %>-->
+	<%= button_to "Add comment", site, :method => 'get' 
+	%>
+	<% end %>
+</body>

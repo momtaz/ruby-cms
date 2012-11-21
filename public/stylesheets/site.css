@@ -1,0 +1,9 @@
+#comment, #comment table {
+	font-size: smaller;
+	color:     white;
+}
+#comment table {
+	border-top:    1px dotted #595;
+	border-bottom: 1px dotted #595;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,35 @@
+<h2>Listing pages </h2>
+<table >
+  <tr >
+    <th >title</th>
+   <th>  permalink </th>
+  <th> body</th>
+   <th>  created at</th>
+    <th>updated at</th>
+     <th></th>
+      <th></th>
+       <th></th>
+  </tr>
+  
+<% @sites.each do |site| %>
+<tr>
+    <td><%= site.title %></td>
+    <td><%= site.permalink %></td>
+  <td> <%= site.body %></td>
+   <td> <%= site.created_at %></td>
+   <td> <%= site.updated_at %></td>
+
+    <div id ="link">
+    <td><%= link_to 'Get info', site %></td>
+    <td><%= link_to 'Edit', edit_site_path(site) %></td> 
+    <td><%= link_to 'Delete', site, confirm: 'Are you sure?', method: :delete %></td>
+    </div>
+  </tr>
+<% end %>
+</table>
+
+
+<%= link_to 'New Site', new_site_path %>
+<p><%= will_paginate @comments %></p>
+</div>
+

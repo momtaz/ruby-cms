@@ -1,0 +1,24 @@
+.sites {
+.list_permalink {
+width: 100%;
+
+font:40px/40px "Times New Roman", serif;
+text-decoration:blink;
+color: purple;
+font-weight:bold ;
+font-size: small;
+}
+.list_actions {
+font-size: small;
+text-align: center;
+}
+.list_line_even {
+background-image:url('c.jpg');
+color: green;
+}
+.list_line_odd {
+background-image:url('d.jpg');
+     color: green;
+}
+
+}

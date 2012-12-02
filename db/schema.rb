@@ -15,11 +15,11 @@ ActiveRecord::Schema.define(:version => 20121119162221) do
 
   create_table "comments", :force => true do |t|
     t.string   "commenter"
+    t.string   "email"
     t.text     "body"
     t.integer  "site_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "email"
   end
 
   add_index "comments", ["site_id"], :name => "index_comments_on_site_id"
